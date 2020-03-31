@@ -8,3 +8,15 @@ function nthTriangularNumber(n) {
 console.log(nthTriangularNumber(4));
 
 //Complexity: O(n)
+
+function nthTriangularNumberIter(n) {
+  let sum = 0;
+  for (let i = n; i > 0; i--) {
+    sum += i;
+  }
+  return sum;
+}
+
+console.log(nthTriangularNumberIter(4));
+
+// O(n)

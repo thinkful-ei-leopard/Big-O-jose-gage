@@ -1,4 +1,4 @@
-'use strict';
+
 
 function reverseString(str) {
   if(str === ''){
@@ -15,13 +15,15 @@ console.log(reverseString('hello'));
 
 
 function revString(str) {
-  let newString = ''
+  let newString = '';
 
   for(let i = 1; i <= str.length; i++) {
-    newString += str[str.length - i]
+    newString += str[str.length - i];
   }
 
-  return newString
+  return newString;
 }
 
-console.log(revString('racecar'))
+console.log(revString('racecar'));
+
+// O(n)
