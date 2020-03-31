@@ -12,3 +12,5 @@ function sheepCounter(sheep){
 }
 
 sheepCounter(6);
+
+//Complexity: O(n)

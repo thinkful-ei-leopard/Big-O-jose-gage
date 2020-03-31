@@ -12,3 +12,5 @@ function fibonacci(n, fibSeq = []) {
 }
 
 console.log(fibonacci(7));
+
+//Complexity: O(n)

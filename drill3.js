@@ -10,3 +10,5 @@ function reverseString(str) {
 }
 
 console.log(reverseString('hello'));
+
+//Complexity: O(n)

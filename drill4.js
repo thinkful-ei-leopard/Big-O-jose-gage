@@ -6,3 +6,5 @@ function nthTriangularNumber(n) {
 }
 
 console.log(nthTriangularNumber(4));
+
+//Complexity: O(n)
