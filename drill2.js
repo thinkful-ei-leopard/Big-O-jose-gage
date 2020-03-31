@@ -13,3 +13,4 @@ function powerCalculator(base, exp) {
 
 console.log(powerCalculator(10, 4));
 
+// O(n)

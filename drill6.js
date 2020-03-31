@@ -12,3 +12,17 @@ function fibonacci(n, fibSeq = []) {
 }
 
 console.log(fibonacci(7));
+
+function fibo(num) {
+  if(num <= 0) {
+      return 0
+  }
+
+  if(num <= 1) {
+      return 1
+  }
+
+  return fibo(num - 1) + fibo(num - 2)
+}
+
+// polynomial O(n^2)
