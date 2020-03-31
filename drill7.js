@@ -6,3 +6,5 @@ function factorial(num) {
 }
 
 console.log(factorial(5));
+
+//Complexity: O(n)
