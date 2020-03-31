@@ -26,3 +26,23 @@ function fibo(num) {
 }
 
 // polynomial O(n^2)
+
+function fiboVer2(n) {
+  if (n === 1 || n === 2) {
+    return 1;
+  } else {
+    let fiboNum = 0;
+    let numMinus2 = 1;
+    let numMinus1 = 1;
+    for(let i = 2; i < n; i++) {
+      fiboNum = numMinus2 + numMinus1;
+      numMinus2 = numMinus1;
+      numMinus1 = fiboNum;
+    }
+    return fiboNum;
+  }
+}
+
+console.log(fiboVer2(7));
+
+// O(n)
