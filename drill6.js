@@ -13,20 +13,16 @@ function fibonacci(n, fibSeq = []) {
 
 console.log(fibonacci(7));
 
-<<<<<<< HEAD
 function fibo(num) {
   if(num <= 0) {
-      return 0
+    return 0;
   }
 
   if(num <= 1) {
-      return 1
+    return 1;
   }
 
-  return fibo(num - 1) + fibo(num - 2)
+  return fibo(num - 1) + fibo(num - 2);
 }
 
 // polynomial O(n^2)
-=======
-//Complexity: O(n)
->>>>>>> 2ecfb705d162d2cb169c31410f162788c9288caa

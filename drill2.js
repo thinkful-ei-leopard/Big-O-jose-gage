@@ -11,10 +11,18 @@ function powerCalculator(base, exp) {
   return base * powerCalculator(base, exp - 1);
 }
 
-console.log(powerCalculator(10, 4));
+//console.log(powerCalculator(10, 4));
 
-<<<<<<< HEAD
 // O(n)
-=======
-//Complexity: O(n)
->>>>>>> 2ecfb705d162d2cb169c31410f162788c9288caa
+
+function powerCalcIter(base, exp) {
+  let product = base;
+  for (let i = 1; i < exp; i++) {
+    product *= base;
+  }
+  return product;
+}
+
+console.log(powerCalcIter(3, 3));
+
+// O(n)
