@@ -12,6 +12,34 @@ function stringSplitter(str, separator='/') {
   return newArray;
 }
 
-console.log(stringSplitter('02/20/2020'));
+// console.log(stringSplitter('02/20/2020'));
 
 //Complexity: O(n)
+
+function stringSplitter2ElectricBugaloo(str) {
+  return str.split('/')
+}
+
+// console.log(stringSplitter2ElectricBugaloo('02/20/2020'))
+
+
+function stringSplitter3(str) {
+  let newArr = []
+  let string = ''
+
+  for(let i = 0; i < str.length; i++) {
+    if(str[i] !== '/') {
+      string += str[i]
+    } else if(str[i] === '/' || i === str.length - 1) {
+      newArr.push(string)
+      string = ''
+    }
+  }
+  newArr.push(string)
+
+  return newArr
+}
+
+// O(n)
+
+console.log(stringSplitter3('02/20/2020'))
