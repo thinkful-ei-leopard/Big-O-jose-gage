@@ -12,3 +12,16 @@ function reverseString(str) {
 console.log(reverseString('hello'));
 
 // O(n)
+
+
+function revString(str) {
+  let newString = ''
+
+  for(let i = 1; i <= str.length; i++) {
+    newString += str[str.length - i]
+  }
+
+  return newString
+}
+
+console.log(revString('racecar'))
